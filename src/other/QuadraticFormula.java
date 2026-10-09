@@ -20,10 +20,9 @@ import java.util.Scanner;
  * X2=1.0
  * </pre>
  * <p>
- * <b>⚠️ 这个程序有一个没处理的漏洞，请你先别急着照抄：</b>
- * 如果 {@code a 输入 0}，方程就不是二次方程了（退化成 bx + c = 0），
- * 但程序照样套求根公式，会算出 {@code NaN}（不是数）和 {@code Infinity}（无穷大）。
- * 自己想想：要怎么改才能拦住 a = 0 的情况？
+ * <b>关于 a = 0：</b>如果 a 输入 0，方程就不是二次方程了（退化成 bx + c = 0），
+ * 套求根公式会出现除以 0。所以读到 a 之后<b>先检查</b>：等于 0 就提示并直接结束程序
+ * （用 {@code return}），后面的代码都不会执行。
  *
  * @author 杨训杰
  */
@@ -36,6 +35,18 @@ public class QuadraticFormula {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("请输入方程的系数a：");
 		int a = sc.nextInt();
+
+		// 检查：a 不能为 0。
+		// 因为 a = 0 时方程就不是「二次」方程了（变成 bx + c = 0），
+		// 再套求根公式会出现除以 0，算出 NaN（不是一个数）和 Infinity（无穷大）。
+		// return 的意思是「立刻结束这个方法」——写在 main 里就是直接结束整个程序，
+		// 后面的代码都不会执行。
+		if (a == 0) {
+			System.out.println("a 不能为 0，否则就不是一元二次方程了");
+			sc.close();
+			return;
+		}
+
 		System.out.println("请输入方程的系数b：");
 		int b = sc.nextInt();
 		System.out.println("请输入方程的系数c：");
