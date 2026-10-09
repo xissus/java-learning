@@ -46,7 +46,7 @@ java-learning/
 │   │   ├── Check.java              #   if-else：按温度给提示
 │   │   ├── Loop.java               #   for 循环：倒着数、每次减 2
 │   │   ├── Sum100.java             #   for 循环 + 累加：1 加到 100
-│   │   ├── Sum100Practice.java     #   同一道题的留白版（循环体留给你写）
+│   │   ├── Sum100Practice.java     #   同一道题的练习记录（原留白版，已自己写完）
 │   │   └── Sum200.java             #   累加练习（保留了当时「打印写在循环里」的坑）
 │   ├── day02/                      # 转到 Eclipse 之后的练习（原来的包名叫 demo2）
 │   │   ├── Types.java              #   变量与四种基本类型
@@ -163,7 +163,7 @@ java -cp bin day01.Sum100
 | day01 | `Check.java` | `if - else` 分支判断 | 已完成 |
 | day01 | `Loop.java` | `for` 循环的三要素（起始值 / 结束条件 / 每轮变化） | 已完成 |
 | day01 | `Sum100.java` | `for` 循环 + **累加器**（先设 0，再逐个加） | 已完成 |
-| day01 | `Sum100Practice.java` | 同一道题的**留白版**，循环体待你自己补 | 待完成 ⬅ 你来写 |
+| day01 | `Sum100Practice.java` | 同一道题的**练习记录**：原本是留白版，自己补完了循环体 | 已完成 |
 | day01 | `Sum200.java` | 累加练习（保留了「打印写在循环里」的踩坑记录） | 已完成 |
 | day02 | `Types.java` | 变量的四种类型：`int` / `double` / `boolean` / `String` | 已完成 |
 | day02 | `Divide.java` | **整数除法会截断小数**，`10/3` 得 3、`10.0/3` 得小数 | 已完成 |
