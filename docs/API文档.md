@@ -13,7 +13,7 @@
 - [lesson04](#lesson04--guessthreetimes)
 - [lesson05](#lesson05--digitmethods)
 - [lesson06](#lesson06--数组专题)
-- [lesson07](#lesson07--arraymax)
+- [lesson07](#lesson07--数组综合题)
 - [utils（工具类）](#utils工具类)
 
 ## 速查表
@@ -53,7 +53,8 @@
 | `ArrayTest2` | `lesson06` | `main` | 统计能被 3 整除的个数 |
 | `ArrayTest3` | `lesson06` | `main` | 奇数翻倍 / 偶数减半 |
 | `ArrayTest4` | `lesson06` | `main` | `String[]` 存姓名 |
-| `ArrayMax` | `lesson07` | `main` | 求最大值（TODO 待完成） |
+| `ArrTest5` | `lesson07` | `main` | 求数组最大值 |
+| `ArrTest6` | `lesson07` | `main` | 随机数求和 / 平均 / 统计 |
 | `InputUtils` | `utils` | `readInt`、`readIntInRange`、`readIntInRangeOrExit`、`readWord` | 控制台输入工具 |
 | `ArrayUtils` | `utils` | `sum`、`average`、`max`、`min`、`countDivisibleBy`、`print` | 数组操作工具 |
 
@@ -210,9 +211,11 @@ int sum = DigitMethods.sumTo(50);                     // 1275
 
 ---
 
-## lesson07 · `ArrayMax`
+## lesson07 · 数组综合题
 
-**包：** `lesson07`
+**包：** `lesson07` —— 课堂上跟着老师敲的两道数组综合题。
+
+### `ArrTest5` · 求数组最大值
 
 ```java
 public static void main(String[] args)
@@ -220,9 +223,28 @@ public static void main(String[] args)
 
 | 项目 | 说明 |
 | --- | --- |
-| 现状 | 三个 `TODO` 待实现，运行后目前没有输出 |
-| 目标 | 输出 `{4, 9, 2, 7, 5}` 中的最大值 `9` |
-| 思路 | 先假设第 0 个元素最大，遍历时遇到更大的就更新 |
+| 数组 | `{ 33, 5, 22, 44, 55 }`（静态初始化） |
+| 核心变量 | `max`，初值取 `arr[0]` |
+| 输出 | `55` |
+| 关键点 | 初值**不能**写 `0`——数组全是负数时会出错 |
+
+### `ArrTest6` · 随机数综合练习
+
+```java
+import java.util.Random;
+
+public static void main(String[] args)
+```
+
+| 项目 | 说明 |
+| --- | --- |
+| 数组 | `new int[10]`（动态初始化） |
+| 随机数 | `new Random().nextInt(100) + 1` → 1~100 |
+| 输出 1 | `随机数的总和为` + 十个数的和 |
+| 输出 2 | `数组的平均数为` + 平均数 |
+| 输出 3 | `一共有N个数据比平均数小` |
+| 输出 4 | 把数组逐个打印出来验证 |
+| ⚠️ 踩坑点 | `sum / arr.length` 是整数除法，会丢小数；正确写法是 `(double) sum / arr.length` |
 
 ---
 
