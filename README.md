@@ -82,7 +82,8 @@ java-learning/
 │   │   ├── ArrayTest3.java         #     奇数翻倍、偶数减半
 │   │   └── ArrayTest4.java         #     String 类型数组（存姓名）
 │   ├── lesson07/
-│   │   └── ArrayMax.java           #   求最大值（练习留白，待完成）
+│   │   ├── ArrTest5.java           #   求数组最大值（课堂上跟着敲的第一题）
+│   │   └── ArrTest6.java           #   随机数综合练习：求和、平均、统计比平均小的个数
 │   └── utils/                      # 通用工具类（可复用的「零件库」）
 │       ├── ArrayUtils.java         #   数组求和 / 平均 / 最值 / 统计
 │       └── InputUtils.java         #   安全地读取键盘输入
@@ -194,9 +195,11 @@ java -cp bin day01.Sum100
 | lesson06 | `ArrayDemo1~3` | 数组的声明与初始化、索引、`length`、遍历的三种写法 | 已完成 |
 | lesson06 | `ArrayPractice`、`ArrayPractice2` | 录入成绩求总分/平均分、求最大值 | 已完成 |
 | lesson06 | `ArrayTest1~4` | 求和、条件统计、按规则换算、`String[]` | 已完成 |
-| lesson07 | `ArrayMax.java` | 求数组最大值（练习留白版，三个 `TODO` 待自己动手完成） | **练习中** |
+| lesson07 | `ArrTest5.java` | 求数组最大值：先假设第一个最大，再逐个挑战 | 已完成 |
+| lesson07 | `ArrTest6.java` | 随机数综合练习：`Random` 生成、求和、平均、统计比平均数小的个数 | 已完成 |
 
-> lesson07 是留给自己动手的练习题，所以代码里**故意没有写答案**，只保留了题目和思路提示。
+> lesson07 是课堂上跟着老师敲的数组综合题，代码保持原始写法（含一处**有意保留的踩坑记录**：
+> `ArrTest6` 里的平均数用了整数除法，详见文件内注释）。
 
 每课的详细讲解（运行后会看到什么、哪几行最关键、可以自己动手改哪里）在
 [docs/课程导读.md](./docs/课程导读.md)。
