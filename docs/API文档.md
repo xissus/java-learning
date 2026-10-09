@@ -14,6 +14,7 @@
 - [lesson05](#lesson05--digitmethods)
 - [lesson06](#lesson06--数组专题)
 - [lesson07](#lesson07--数组综合题)
+- [other（自己练手）](#other自己练手)
 - [utils（工具类）](#utils工具类)
 
 ## 速查表
@@ -55,6 +56,7 @@
 | `ArrayTest4` | `lesson06` | `main` | `String[]` 存姓名 |
 | `ArrTest5` | `lesson07` | `main` | 求数组最大值 |
 | `ArrTest6` | `lesson07` | `main` | 随机数求和 / 平均 / 统计 |
+| `QuadraticFormula` | `other` | `main` | 解一元二次方程（判别式分支） |
 | `InputUtils` | `utils` | `readInt`、`readIntInRange`、`readIntInRangeOrExit`、`readWord` | 控制台输入工具 |
 | `ArrayUtils` | `utils` | `sum`、`average`、`max`、`min`、`countDivisibleBy`、`print` | 数组操作工具 |
 
@@ -249,6 +251,31 @@ public static void main(String[] args)
 
 ---
 
+## other（自己练手）
+
+**包：** `other` —— 课程之外自己找来做的小练习。
+
+### `QuadraticFormula` · 解一元二次方程
+
+```java
+import java.util.Scanner;
+
+public static void main(String[] args)
+```
+
+| 项目 | 说明 |
+| --- | --- |
+| 输入 | 依次读入三个整数系数 `a`、`b`、`c` |
+| 公式 | `x = (-b ± √(b²-4ac)) / 2a` |
+| 判别式 | `double delta = (b * b) - (4 * a * c)` |
+| 分支 1 | `delta > 0` → 输出 `X1=`、`X2=` 两个根 |
+| 分支 2 | `delta == 0` → 输出 `X1=X2=` 一个根（**注意写 `2.0` 而非 `2`，避免整数除法**） |
+| 分支 3 | `delta < 0` → 输出 `方程无解` |
+| 用到的类 | `Scanner`（输入）、`Math.sqrt()`（开平方） |
+| ⚠️ 未处理的漏洞 | `a = 0` 时不是二次方程，会算出 `NaN` 和 `Infinity`；**故意留着，等你自己补判断** |
+
+---
+
 ## utils（工具类）
 
 **包：** `utils` —— 与 `lessonNN` 平级的独立包，可被任何课程代码导入。
@@ -330,7 +357,7 @@ ArrayUtils.print(scores);
 ```bash
 javadoc -encoding UTF-8 -charset UTF-8 -d docs/api \
   -sourcepath src \
-  -subpackages lesson01:lesson02:lesson03:lesson04:lesson05:lesson06:lesson07:utils
+  -subpackages day01:day02:lesson01:lesson02:lesson03:lesson04:lesson05:lesson06:lesson07:other:utils
 ```
 
 生成后用浏览器打开 `docs/api/index.html` 即可查看。
