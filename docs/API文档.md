@@ -56,7 +56,7 @@
 | `ArrayTest4` | `lesson06` | `main` | `String[]` 存姓名 |
 | `ArrTest5` | `lesson07` | `main` | 求数组最大值 |
 | `ArrTest6` | `lesson07` | `main` | 随机数求和 / 平均 / 统计 |
-| `QuadraticFormula` | `other` | `main` | 解一元二次方程（判别式分支） |
+| `QuadraticFormula` | `other` | `main` | 解一元二次方程（判别式分支 + a=0 检查） |
 | `InputUtils` | `utils` | `readInt`、`readIntInRange`、`readIntInRangeOrExit`、`readWord` | 控制台输入工具 |
 | `ArrayUtils` | `utils` | `sum`、`average`、`max`、`min`、`countDivisibleBy`、`print` | 数组操作工具 |
 
@@ -268,11 +268,11 @@ public static void main(String[] args)
 | 输入 | 依次读入三个整数系数 `a`、`b`、`c` |
 | 公式 | `x = (-b ± √(b²-4ac)) / 2a` |
 | 判别式 | `double delta = (b * b) - (4 * a * c)` |
+| a=0 处理 | 读完 `a` 立即检查，等于 0 则提示并 `return` 结束程序（避免除以 0 得到 `NaN` / `Infinity`） |
 | 分支 1 | `delta > 0` → 输出 `X1=`、`X2=` 两个根 |
 | 分支 2 | `delta == 0` → 输出 `X1=X2=` 一个根（**注意写 `2.0` 而非 `2`，避免整数除法**） |
 | 分支 3 | `delta < 0` → 输出 `方程无解` |
-| 用到的类 | `Scanner`（输入）、`Math.sqrt()`（开平方） |
-| ⚠️ 未处理的漏洞 | `a = 0` 时不是二次方程，会算出 `NaN` 和 `Infinity`；**故意留着，等你自己补判断** |
+| 用到的类 | `Scanner`（输入）、`Math.sqrt()`（开平方）、`return`（提前结束程序） |
 
 ---
 

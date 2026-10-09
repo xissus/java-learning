@@ -85,7 +85,7 @@ java-learning/
 │   │   ├── ArrTest5.java           #   求数组最大值（课堂上跟着敲的第一题）
 │   │   └── ArrTest6.java           #   随机数综合练习：求和、平均、统计比平均小的个数
 │   ├── other/                      # 课程之外自己练手的小程序
-│   │   └── QuadraticFormula.java   #   解一元二次方程（求根公式 + 判别式）
+│   │   └── QuadraticFormula.java   #   解一元二次方程（求根公式 + 判别式 + a=0 检查）
 │   └── utils/                      # 通用工具类（可复用的「零件库」）
 │       ├── ArrayUtils.java         #   数组求和 / 平均 / 最值 / 统计
 │       └── InputUtils.java         #   安全地读取键盘输入
@@ -207,10 +207,11 @@ java -cp bin day01.Sum100
 
 | 位置 | 文件 | 练到的知识点 | 状态 |
 | --- | --- | --- | --- |
-| `other` | `QuadraticFormula.java` | 解一元二次方程：`Scanner` 输入、`Math.sqrt` 开根号、`if - else if - else` 判断判别式 | 已完成 |
+| `other` | `QuadraticFormula.java` | 解一元二次方程：`Scanner` 输入、`Math.sqrt` 开根号、`if - else if - else` 判断判别式、用 `return` 提前结束程序 | 已完成 |
 
-> `other` 是**课程之外自己找题做**的练习。这个程序有一个**故意留着的漏洞**：
-> 没有拦住 `a = 0` 的情况（那时它已经不是二次方程了），你可以自己想想怎么修。
+> `other` 是**课程之外自己找题做**的练习。这个程序读入 `a` 后会**先检查它是不是 0** ——
+> 因为 `a = 0` 时方程就不是二次方程了，套求根公式会出现除以 0。
+> 检查不合格就用 `return` 直接结束程序，这是一种很常见的「提前退出」写法。
 
 每课的详细讲解（运行后会看到什么、哪几行最关键、可以自己动手改哪里）在
 [docs/课程导读.md](./docs/课程导读.md)。
