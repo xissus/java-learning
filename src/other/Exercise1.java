@@ -11,12 +11,15 @@ public class Exercise1 {
 		boolean a = false;//练习使用布尔标志变量，常规可以使用if语句
 		if (num > 0) {
 			a = true;
+		}
+			
 			if (a) {
 				double result = (double) (num * 0.6);//int直接砍掉小数部分而double更精准
 				System.out.println("结果" + result);
 			} else {
-				System.out.println("结果" + num);
-			}
+				
+			System.out.println("结果为" + num);
+			
 		}
 		sc.close();
 
