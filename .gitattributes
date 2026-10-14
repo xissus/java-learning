@@ -1,0 +1,14 @@
+# 换行符统一策略
+# Windows 用 CRLF，Linux/Mac 用 LF，两边混着存会让 Git 误以为"整个文件都改了"。
+# 这里规定：仓库里一律按 LF 存储，谁 clone 下去都不会出现假 diff。
+* text=auto eol=lf
+
+# 以下类型不要做换行符转换（转换会损坏文件）
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.jar  binary
+*.class binary
+*.pdf  binary
