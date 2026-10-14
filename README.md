@@ -1,7 +1,7 @@
 # java-learning
 
 > 一个「大数据管理与应用」专业大一学生的 Java 入门代码仓库。
-> 从 `Hello World` 到数组遍历，每一课的代码、踩过的坑、写在注释里的思考，都留在这里。
+> 从 `Hello World` 到选择结构、数组遍历，每一课的代码、踩过的坑、写在注释里的思考，都留在这里。
 
 [![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.oracle.com/java/)
 [![IDE](https://img.shields.io/badge/IDE-Eclipse-2C2255.svg)](https://www.eclipse.org/)
@@ -17,7 +17,7 @@
 
 - 每一课都是**一个能跑起来的小程序**，不是抽象的概念，运行一下就知道它干什么；
 - 代码里的注释**按初学者的思路写**，包括「为什么这么写」和「哪些写法是坑」；
-- 目录**按学习顺序排列**，`day01` → `day02` → `lesson01` ~ `lesson07`，可以照着顺序看下去；
+- 目录**按学习顺序排列**，`day01` → `day02` → `day03` → `lesson01` ~ `lesson07`，可以照着顺序看下去；
 - 学到的每个知识点都在下面的[课程导航](#四课程导航)里列清楚了，配着代码一起看最快。
 
 **如果你是初学者，建议的阅读方式：**
@@ -61,6 +61,15 @@ java-learning/
 │   │   ├── LeapYear2.java          #   闰年判断「方法化」
 │   │   ├── Table99.java            #   九九乘法表（循环嵌套）
 │   │   └── Test1.java              #   取三位数的个/十/百位
+│   ├── day03/                      # 选择结构专题：if - else if 与 switch
+│   │   ├── EatFood.java            #   最简单的 if - else：按身上钱数决定吃什么
+│   │   ├── Pay.java                #   最简单的 if - else：付款金额够不够
+│   │   ├── FilmSeat.java           #   if 里再套 if：先查票号范围，再看座位左右
+│   │   ├── Score.java              #   if - else if - else：按分数段给奖励
+│   │   ├── LinearEquation.java     #   解二元一次方程组（先判断系数行列式是不是 0）
+│   │   ├── UserChoose.java         #   switch：机票服务的 1~4 号菜单
+│   │   ├── WeekSwitch.java         #   switch：输入 1~7 打印当天做什么运动
+│   │   └── test2.java              #   三个并列 if：红绿灯判断
 │   ├── lesson01/
 │   │   └── GuessNumber.java        #   猜数字游戏
 │   ├── lesson02/
@@ -184,6 +193,19 @@ java -cp bin day01.Sum100
 | day02 | `LeapYear2.java` | 把判断逻辑**抽成方法**，再用数组批量判断 | 已完成 |
 | day02 | `Table99.java` | **循环嵌套** + `print` / `println` / `\t` | 已完成 |
 | day02 | `Test1.java` | 用 `%` 和 `/` 取出三位数的个位、十位、百位 | 已完成 |
+| day03 | `EatFood.java` | 最简单的 `if - else` 二选一（身上钱数 > 100 吃什么） | 已完成 |
+| day03 | `Pay.java` | `if - else` 二选一（付款金额是否 ≥ 600） | 已完成 |
+| day03 | `FilmSeat.java` | **`if` 嵌套**：外层先校验票号在 0~100 之间，内层再用 `% 2` 判断座位左右 | 已完成 |
+| day03 | `Score.java` | **`if - else if - else` 多分支**：按 95~100 / 90~94 / 80~89 分段给奖励，其余「挨揍」 | 已完成 |
+| day03 | `LinearEquation.java` | 读 6 个数解二元一次方程组，先用 `a*d - b*c == 0` 判断有没有解 | 已完成 |
+| day03 | `UserChoose.java` | **`switch` 选择结构**：1~4 号服务，`default` 兜底 | 已完成 |
+| day03 | `WeekSwitch.java` | `switch` 列举一周七天，每天做不同的运动，`default` 提示「没有这个星期」 | 已完成 |
+| day03 | `test2.java` | 用布尔变量 + **三个并列的 `if`** 表示红绿灯（对比：写成 `if - else if` 会更严谨） | 已完成 |
+
+> `day03` 是**选择结构专题**——这一课就是把「让程序做判断」这件事练熟：
+> 简单的二选一用 `if - else`，多段范围判断用 `if - else if - else`，
+> 「列举几个选项让人挑一个」用 `switch`。三者的选用场景在
+> [课程导读的 day03 那一章](./docs/课程导读.md)里专门讲了。
 
 ### 猜数字游戏系列
 
@@ -287,7 +309,7 @@ public class Demo {
 }
 ```
 
-> 说明：`day01` ~ `lesson07` 的代码**保持各自独立、没有改用工具类**。
+> 说明：`day01`、`day02`、`day03` 和 `lesson01` ~ `lesson07` 的代码**保持各自独立、没有改用工具类**。
 > 因为那几课是学习过程中的原始记录，自己一行行写出来的循环和判断，
 > 比调用一个现成方法更有价值。工具类留给后面的课程使用。
 
