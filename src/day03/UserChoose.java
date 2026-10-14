@@ -21,9 +21,9 @@ public class UserChoose {
 		case 4:
 			System.out.println("退出服务");
 			break;
-			default :
-				System.out.println("退出服务");
-				break;
+		default:
+			System.out.println("退出服务");
+			break;
 		}
 
 	}
