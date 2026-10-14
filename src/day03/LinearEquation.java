@@ -4,9 +4,9 @@ public class LinearEquation {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		double a,b,c,d,e,f;
-		double x,y;
-		System.out.println("请输入a，b，e的值：" );
+		double a, b, c, d, e, f;
+		double x, y;
+		System.out.println("请输入a，b，e的值：");
 		a = input.nextDouble();
 		b = input.nextDouble();
 		e = input.nextDouble();
@@ -21,6 +21,6 @@ public class LinearEquation {
 			y = (a * f - e * c) / (a * d - b * c);
 			System.out.println("x = " + x);
 			System.out.println("y = " + y);
-	    }
+		}
 	}
 }

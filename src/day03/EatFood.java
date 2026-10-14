@@ -10,9 +10,8 @@ public class EatFood {
 		int Money = sc.nextInt();
 		if (Money > 100) {
 			System.out.println("去网红餐厅");
-		}
-		else {
+		} else {
 			System.out.println("吃沙县小吃");
-	    }
+		}
 	}
 }

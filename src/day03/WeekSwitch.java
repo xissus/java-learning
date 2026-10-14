@@ -10,8 +10,8 @@ public class WeekSwitch {
 		int week = sc.nextInt();
 		switch (week) {
 		case 1:
-		System.out.println("跑步");
-		break;
+			System.out.println("跑步");
+			break;
 		case 2:
 			System.out.println("做操");
 			break;
@@ -30,10 +30,10 @@ public class WeekSwitch {
 		case 7:
 			System.out.println("游泳");
 			break;
-			default:
-				System.out.println("没有这个星期");
-				break;
-			
+		default:
+			System.out.println("没有这个星期");
+			break;
+
 		}
 	}
 
