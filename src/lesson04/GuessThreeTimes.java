@@ -2,15 +2,6 @@ package lesson04;
 
 import java.util.Scanner;
 
-/**
- * lesson04：while 循环 + 机会次数控制。
- * <p>
- * 在 lesson03 的三分支判断外面套上 while 循环，最多允许猜 3 次， 并新增一个 boolean 标记位记录「到底有没有猜中」。
- * <p>
- * 涉及知识点：while 循环、计数器 attempts、循环内 break、循环结束后的收尾判断。
- *
- * @author 杨训杰
- */
 public class GuessThreeTimes {
 
 	/**

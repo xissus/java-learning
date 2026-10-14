@@ -2,14 +2,6 @@ package lesson02;
 
 import java.util.Scanner;
 
-/**
- * lesson02：Scanner 入门练习。
- * <p>
- * 只做一件事——读入一个整数并原样打印出来，用来熟悉 {@code import java.util.Scanner}、创建对象和
- * {@code nextInt()} 的写法。
- *
- * @author 杨训杰
- */
 public class GuessMini {
 
 	/**

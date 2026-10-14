@@ -1,12 +1,5 @@
 package lesson06;
 
-/**
- * lesson06：数组遍历 + 条件统计。
- * <p>
- * 题目：定义数组存储 1~10，遍历取出每个元素，统计其中能被 3 整除的数字个数。
- *
- * @author 杨训杰
- */
 public class ArrayTest2 {
 
 	/**

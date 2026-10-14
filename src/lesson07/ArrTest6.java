@@ -2,24 +2,6 @@ package lesson07;
 
 import java.util.Random;
 
-/**
- * lesson07：数组综合练习——随机数 + 求和 + 平均 + 统计。
- * <p>
- * 需求（斯坦福大学原题，第 3 问难度较高）：
- * <ol>
- * <li>生成 10 个 1~100 的随机数存入数组</li>
- * <li>求所有随机数的和</li>
- * <li>求所有数据的平均数</li>
- * <li>统计有多少个数据比平均数小</li>
- * </ol>
- * <p>
- * 用到的关键点：{@code Random} 生成随机数（{@code nextInt(100) + 1} 得到 1~100）、 动态初始化数组
- * {@code new int[10]}、循环遍历累加。
- * <p>
- * 运行结果示例：{@code 随机数的总和为550 / 数组的平均数为55.0 / 一共有5个数据比平均数小}
- *
- * @author 杨训杰
- */
 public class ArrTest6 {
 	// 导入Random包
 

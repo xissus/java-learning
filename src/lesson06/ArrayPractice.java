@@ -2,17 +2,6 @@ package lesson06;
 
 import java.util.Scanner;
 
-/**
- * lesson06：数组综合练习——录入成绩并统计总分与平均分。
- * <p>
- * 用 Scanner 依次读入 5 个成绩存入数组，再遍历数组求和、求平均分并逐个打印。
- * <p>
- * 涉及知识点：数组的声明与初始化、{@code array.length}、数组遍历、 强制类型转换 {@code (double)} 避免整数除法截断。
- * <p>
- * 说明：使用 Scanner 需要先在 package 下面写 {@code import java.util.Scanner;}。
- *
- * @author 杨训杰
- */
 public class ArrayPractice {
 
 	/**

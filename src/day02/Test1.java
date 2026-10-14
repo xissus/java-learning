@@ -2,21 +2,6 @@ package day02;
 
 import java.util.Scanner;
 
-/**
- * day02：取出一个三位整数的个位、十位、百位。
- * <p>
- * 三个公式要记住：
- * <ul>
- * <li>个位 = {@code number % 10}</li>
- * <li>十位 = {@code number / 10 % 10}（先去掉个位，再取余）</li>
- * <li>百位 = {@code number / 100 % 10}（先去掉个位和十位，再取余）</li>
- * </ul>
- * 例如输入 456：个位 6、十位 5、百位 4。
- * <p>
- * 这个思路后来在 lesson05 里被改写成了三个独立的方法。
- *
- * @author 杨训杰
- */
 public class Test1 {
 
 	/**

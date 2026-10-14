@@ -1,12 +1,5 @@
 package lesson06;
 
-/**
- * lesson06：数组遍历求和。
- * <p>
- * 题目：定义数组存储 1、2、3、4、5，遍历取出每个元素，求所有元素的和。
- *
- * @author 杨训杰
- */
 public class ArrayTest1 {
 
 	/**

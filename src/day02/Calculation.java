@@ -2,16 +2,6 @@ package day02;
 
 import java.util.Scanner;
 
-/**
- * day02：四则运算练习——读两个整数，输出和、差、商、积。
- * <p>
- * 第一次把 Scanner 和算术运算结合起来用。
- * <p>
- * 注意：这里的「商」是用 {@code num1 / num2} 算的，两个整数相除， 结果会被截断成整数（例如 7 / 2 得到 3 而不是 3.5），
- * 想要小数结果需要写成 {@code (double) num1 / num2}。
- *
- * @author 杨训杰
- */
 public class Calculation {
 
 	/**

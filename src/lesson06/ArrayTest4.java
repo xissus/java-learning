@@ -2,14 +2,6 @@ package lesson06;
 
 import java.util.Scanner;
 
-/**
- * lesson06：String 类型数组练习——批量录入学生姓名。
- * <p>
- * 数组类型不只是 int，也可以是 String、double 等任意类型。 本程序演示 {@code String[]} 的声明与遍历：先循环录入 50
- * 个姓名，再循环打印出来。
- *
- * @author 杨训杰
- */
 public class ArrayTest4 {
 
 	/**

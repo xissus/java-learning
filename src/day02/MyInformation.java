@@ -2,17 +2,6 @@ package day02;
 
 import java.util.Scanner;
 
-/**
- * day02：录入个人信息（重点：nextLine 和 nextInt 混用）。
- * <p>
- * 依次读入姓名、学号、性别、年龄和一句自我激励的话，然后统一打印出来。
- * <p>
- * 这里踩过一个很经典的坑：{@code nextInt()} 只读走数字，会把后面的「回车符」留在输入里， 于是紧接着的
- * {@code nextLine()} 会立刻读到那个空回车，看起来像「程序自己跳过了输入」。 解决办法就是在 {@code nextInt()}
- * 后面补一句 {@code sc.nextLine()} 把回车吃掉 —— 就是读取年龄之后紧跟的那一句。
- *
- * @author 杨训杰
- */
 public class MyInformation {
 
 	/**

@@ -2,14 +2,6 @@ package lesson05;
 
 import java.util.Scanner;
 
-/**
- * lesson05：方法定义与调用练习——拆分数位 + 累加求和。
- * <p>
- * 程序读取一个三位整数，分别取出它的个位、十位、百位，并计算 1~50 的和。 每个功能都被抽成了一个独立的方法，用来练习「定义方法 / 调用方法 /
- * 返回值」。
- *
- * @author 杨训杰
- */
 public class DigitMethods {
 
 	/**

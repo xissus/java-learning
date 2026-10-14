@@ -2,25 +2,6 @@ package utils;
 
 import java.util.Scanner;
 
-/**
- * 控制台输入工具类。
- * <p>
- * 把各个 lesson 里反复出现的「读取一个整数」「读取一个范围内的整数」等输入校验逻辑 集中到一处，避免每写一个新程序都要复制一遍 while +
- * hasNextInt 的模板代码。
- * <p>
- * 使用示例：
- *
- * <pre>{@code
- * Scanner sc = new Scanner(System.in);
- * int age = InputUtils.readInt(sc, "请输入你的年龄：");
- * int score = InputUtils.readIntInRange(sc, "请输入成绩：", 0, 100);
- * sc.close();
- * }</pre>
- * <p>
- * 说明：工具类只提供静态方法，不需要（也不应该）创建对象，因此构造方法被私有化。
- *
- * @author 杨训杰
- */
 public final class InputUtils {
 
 	/**

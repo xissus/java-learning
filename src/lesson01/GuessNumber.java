@@ -3,16 +3,6 @@ package lesson01;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * lesson01：猜数字游戏（第一个综合小程序）。
- * <p>
- * 程序随机生成一个 1~50 的整数，玩家最多有 5 次机会猜中它。 输入 0 可以中途退出；输入非整数或超出范围的数字属于无效输入，不消耗次数。
- * <p>
- * 涉及知识点：Scanner 键盘输入、Random 随机数、while 循环、if-else 分支、 break / continue、boolean
- * 标记位。
- *
- * @author 杨训杰
- */
 public class GuessNumber {
 
 	/**

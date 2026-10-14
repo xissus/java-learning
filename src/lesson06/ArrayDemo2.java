@@ -1,17 +1,5 @@
 package lesson06;
 
-/**
- * lesson06：通过索引访问和修改数组元素。
- * <p>
- * 演示两个基本格式：
- * <ul>
- * <li>取值：{@code 数组名[索引]}</li>
- * <li>存值：{@code 数组名[索引] = 具体数据}</li>
- * </ul>
- * 索引从 0 开始，所以第 1 个元素的索引是 0。
- *
- * @author 杨训杰
- */
 public class ArrayDemo2 {
 
 	/**

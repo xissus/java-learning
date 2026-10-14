@@ -1,19 +1,5 @@
 package lesson07;
 
-/**
- * lesson07：求数组最大值——课堂上跟着老师敲的第一道数组综合题。
- * <p>
- * 思路：先认定第 0 个元素最大（{@code max = arr[0]}）， 再拿后面每个元素跟 max 比，谁大就把谁记下来，循环结束后 max
- * 就是最大值。
- * <p>
- * <b>为什么不能写成 {@code max = 0}？</b>如果数组里全是负数，0 会比它们都大，结果就错了。 所以初值一定要取数组里的某个真实元素。
- * <p>
- * 扩展练习（还没做）：把这个程序改写成求最小值。
- * <p>
- * 运行结果：{@code 55}
- *
- * @author 杨训杰
- */
 public class ArrTest5 {
 
 	public static void main(String[] args) {

@@ -1,24 +1,5 @@
 package utils;
 
-/**
- * 数组工具类。
- * <p>
- * 把 lesson06 开始反复练习的「遍历数组做统计」的常见需求（求和、平均、最大值、
- * 最小值、按条件计数、打印）集中成一组静态方法，方便后续课程直接复用。
- * <p>
- * 使用示例：
- *
- * <pre>{@code
- * int[] scores = { 88, 92, 76, 95 };
- * System.out.println("总分：" + ArrayUtils.sum(scores));
- * System.out.println("平均分：" + ArrayUtils.average(scores));
- * System.out.println("最高分：" + ArrayUtils.max(scores));
- * }</pre>
- * <p>
- * 说明：工具类只提供静态方法，不需要（也不应该）创建对象，因此构造方法被私有化。
- *
- * @author 杨训杰
- */
 public final class ArrayUtils {
 
 	/**

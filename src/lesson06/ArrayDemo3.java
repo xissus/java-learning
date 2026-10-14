@@ -1,15 +1,5 @@
 package lesson06;
 
-/**
- * lesson06：数组遍历的演进过程（为什么最后要用 length）。
- * <p>
- * 从「一个个手动打印」到「写死循环次数」，最后到「用 {@code arr.length} 动态获取长度」， 演示数组遍历写法是怎么一步步变好的。
- * <p>
- * 结论：遍历数组的标准写法是 {@code for (int i = 0; i < arr.length; i++) { ... }}， 起始条件是
- * 0，结束条件是「数组长度 - 1」（即最大索引）。
- *
- * @author 杨训杰
- */
 public class ArrayDemo3 {
 
 	/**
